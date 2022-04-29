@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <title>Formularios</title>
+    </head>
+
+    <body>
+        <form method="POST" action="destinatario.html">
+            <p>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre">
+            </p>
+            <p>
+                <label for="provincia">Provincia</label>
+                <select name="provincia" multiple>
+                    <option value="b">bio bio</option>
+                    <option>Arauco</option>
+                    <option>Concepción</option>
+                </select>
+            </p>
+
+            <p>
+                <textarea cols="10" rows="10">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                </textarea>
+            </p>
+            <button type="button">Click Acá</button>
+        
+            <fieldset>
+                <legend>Datos personales</legend>
+                <p>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombres" placeholder="Inserta Nombre" required>
+                </p>
+                <p>
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" name="apellidos" value="Gonzalez" readonly>
+                </p>
+                <p>
+                    <label for="provincia">Provincia</label>
+                        <select name="provincia" multiple>
+                            <option value="b">bio bio</option>
+                            <option>Arauco</option>
+                            <option>Concepción</option>
+                    </select>
+                </p>
+                <p>
+                    <input type="submit" value="Enviar"/>
+                </p>
+            </fieldset>
+        </form>
+    </body>
+</html>
